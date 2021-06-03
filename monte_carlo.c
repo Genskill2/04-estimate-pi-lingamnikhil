@@ -12,20 +12,19 @@ float frandom() {
 float mc_pi(int n)
 {
     int c = 0;
-    float x,y,d;
-    for(int i=1;i<=n;i++)
-      {
-      float d = 0;
-        x= frandom();
-        y= frandom();
-        d = sqrt((x*x)+(y*y));
-        while (d<=1)
-            c = c + 1;
-   }
-    float pi = 4 * c/n;
-    return pi;
-    }
-
+float x,y;
+double d;
+for(int i=1;i<=n;i++)
+{
+    x= frandom();
+    y= frandom();
+    d = sqrt((x*x)+(y*y));
+    if (d<=1)
+        {c = c + 1;}
+}
+float pi = 4* (float)c/(float)n;
+return pi;
+}
 
 
 int main(void) {
