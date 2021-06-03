@@ -4,6 +4,19 @@
 #include <math.h>
 
 float mc_pi(int);
+{
+    int c = 0;
+    for(int i=1;i<=n+1,i++);
+      float d = 0;
+        x= random.uniform(-1,1);
+        y= random.uniform(-1,1);
+        d = ((x*2)+(y2))*0.5;
+        while (d<=1)
+            c = c + 1
+   
+    pi = 4 * c/n;
+    return pi;
+    }
 
 float frandom() {
   long int q = random();
