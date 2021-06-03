@@ -6,11 +6,10 @@
 float wallis_pi(int n)
 {
    float pih = 1;
-   int i;
-   float pi;
-   
-    for (i=0;i<=n;i++)
-        pih = ((4*(i^2))/((4*(i^2))-1)) * pih;
+    int i;
+    float pi;
+    for (i=1;i<=n;i++)
+        pih = ((4*(pow(i,2)))/((4*(pow(i,2)))-1)) * pih;
     pi = (float)pih * (float)2;
     return pi;
     }
