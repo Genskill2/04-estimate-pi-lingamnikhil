@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <math.h>
 
-float mc_pi(int);
+float mc_pi(int n);
 {
     int c = 0;
     for(int i=1;i<=n+1,i++);
