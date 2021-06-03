@@ -13,7 +13,7 @@ float mc_pi(int n)
 {
     int c = 0;
 float x,y;
-double d,res;
+float d,res;
 for(int i=1;i<=n;i++)
 {
     x= frandom();
@@ -23,7 +23,7 @@ for(int i=1;i<=n;i++)
     if (res<=1)
         {c = c + 1;}
 }
-float pi = 4* (float)c/(float)n;
+float pi = 4* ((float)c/n);
 return pi;
 }
 
