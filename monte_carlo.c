@@ -13,13 +13,14 @@ float mc_pi(int n)
 {
     int c = 0;
 float x,y;
-double d;
+double d,res;
 for(int i=1;i<=n;i++)
 {
     x= frandom();
     y= frandom();
-    d = sqrt((x*x)+(y*y));
-    if (d<=1)
+    d = ((x*x)+(y*y));
+    res= sqrt(d);
+    if (res<=1)
         {c = c + 1;}
 }
 float pi = 4* (float)c/(float)n;
